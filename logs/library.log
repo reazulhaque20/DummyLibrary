@@ -1564,3 +1564,99 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2025-11-19T13:46:44.714+0800 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-19T13:46:44.717+0800 INFO HikariPool-1 - Shutdown initiated...
 2025-11-19T13:46:44.718+0800 INFO HikariPool-1 - Shutdown completed.
+2025-11-19T14:05:49.816+0800 INFO HV000001: Hibernate Validator 8.0.3.Final
+2025-11-19T14:05:49.842+0800 INFO Starting LibraryApplication using Java 21.0.5 with PID 28876 (/Users/reazulhaque/Documents/GitHub/DummyLibrary/target/classes started by reazulhaque in /Users/reazulhaque/Documents/GitHub/DummyLibrary)
+2025-11-19T14:05:49.843+0800 INFO No active profile set, falling back to 1 default profile: "default"
+2025-11-19T14:05:50.414+0800 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T14:05:50.444+0800 INFO Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2025-11-19T14:05:50.691+0800 INFO Tomcat initialized with port 8181 (http)
+2025-11-19T14:05:50.699+0800 INFO Initializing ProtocolHandler ["http-nio-8181"]
+2025-11-19T14:05:50.700+0800 INFO Starting service [Tomcat]
+2025-11-19T14:05:50.700+0800 INFO Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T14:05:50.725+0800 INFO Initializing Spring embedded WebApplicationContext
+2025-11-19T14:05:50.726+0800 INFO Root WebApplicationContext: initialization completed in 862 ms
+2025-11-19T14:05:50.859+0800 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T14:05:50.888+0800 INFO HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-19T14:05:50.910+0800 INFO HHH000026: Second-level cache disabled
+2025-11-19T14:05:51.052+0800 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T14:05:51.067+0800 INFO HikariPool-1 - Starting...
+2025-11-19T14:05:51.192+0800 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/dummyLibrary user=SA
+2025-11-19T14:05:51.193+0800 INFO HikariPool-1 - Start completed.
+2025-11-19T14:05:51.225+0800 INFO HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T14:05:51.693+0800 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T14:05:51.884+0800 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:05:52.062+0800 INFO Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-19T14:05:52.283+0800 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T14:05:52.577+0800 INFO H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/dummyLibrary'
+2025-11-19T14:05:52.588+0800 INFO Exposing 13 endpoints beneath base path '/actuator'
+2025-11-19T14:05:52.625+0800 INFO Starting ProtocolHandler ["http-nio-8181"]
+2025-11-19T14:05:52.643+0800 INFO Tomcat started on port 8181 (http) with context path '/'
+2025-11-19T14:05:52.654+0800 INFO Started LibraryApplication in 2.991 seconds (process running for 3.669)
+2025-11-19T14:05:52.754+0800 WARN SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-11-19T14:05:52.754+0800 WARN SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-11-19T14:06:00.511+0800 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T14:06:00.512+0800 INFO Initializing Servlet 'dispatcherServlet'
+2025-11-19T14:06:00.517+0800 INFO Completed initialization in 3 ms
+2025-11-19T14:13:33.313+0800 INFO Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T14:13:33.331+0800 INFO Graceful shutdown complete
+2025-11-19T14:13:33.337+0800 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:13:33.346+0800 INFO HikariPool-1 - Shutdown initiated...
+2025-11-19T14:13:33.347+0800 INFO HikariPool-1 - Shutdown completed.
+2025-11-19T14:13:34.431+0800 INFO HV000001: Hibernate Validator 8.0.3.Final
+2025-11-19T14:13:34.455+0800 INFO Starting LibraryApplication using Java 21.0.5 with PID 28941 (/Users/reazulhaque/Documents/GitHub/DummyLibrary/target/classes started by reazulhaque in /Users/reazulhaque/Documents/GitHub/DummyLibrary)
+2025-11-19T14:13:34.457+0800 INFO No active profile set, falling back to 1 default profile: "default"
+2025-11-19T14:13:35.025+0800 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T14:13:35.057+0800 INFO Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2025-11-19T14:13:35.300+0800 INFO Tomcat initialized with port 8181 (http)
+2025-11-19T14:13:35.309+0800 INFO Initializing ProtocolHandler ["http-nio-8181"]
+2025-11-19T14:13:35.309+0800 INFO Starting service [Tomcat]
+2025-11-19T14:13:35.310+0800 INFO Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T14:13:35.333+0800 INFO Initializing Spring embedded WebApplicationContext
+2025-11-19T14:13:35.334+0800 INFO Root WebApplicationContext: initialization completed in 858 ms
+2025-11-19T14:13:35.492+0800 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T14:13:35.530+0800 INFO HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-19T14:13:35.552+0800 INFO HHH000026: Second-level cache disabled
+2025-11-19T14:13:35.707+0800 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T14:13:35.727+0800 INFO HikariPool-1 - Starting...
+2025-11-19T14:13:35.855+0800 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/dummyLibrary user=SA
+2025-11-19T14:13:35.856+0800 INFO HikariPool-1 - Start completed.
+2025-11-19T14:13:35.892+0800 INFO HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T14:13:36.390+0800 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T14:13:36.594+0800 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:13:36.772+0800 INFO Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-19T14:13:37.001+0800 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T14:13:37.347+0800 INFO H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/dummyLibrary'
+2025-11-19T14:13:37.385+0800 INFO Starting ProtocolHandler ["http-nio-8181"]
+2025-11-19T14:13:37.404+0800 INFO Tomcat started on port 8181 (http) with context path '/'
+2025-11-19T14:13:37.439+0800 INFO Tomcat initialized with port 8182 (http)
+2025-11-19T14:13:37.440+0800 INFO Initializing ProtocolHandler ["http-nio-8182"]
+2025-11-19T14:13:37.440+0800 INFO Starting service [Tomcat]
+2025-11-19T14:13:37.440+0800 INFO Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T14:13:37.446+0800 INFO Initializing Spring embedded WebApplicationContext
+2025-11-19T14:13:37.447+0800 INFO Root WebApplicationContext: initialization completed in 41 ms
+2025-11-19T14:13:37.453+0800 INFO Exposing 13 endpoints beneath base path '/actuator'
+2025-11-19T14:13:37.475+0800 INFO Starting ProtocolHandler ["http-nio-8182"]
+2025-11-19T14:13:37.477+0800 INFO Tomcat started on port 8182 (http) with context path '/'
+2025-11-19T14:13:37.487+0800 INFO Started LibraryApplication in 3.202 seconds (process running for 3.771)
+2025-11-19T14:13:37.606+0800 WARN SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-11-19T14:13:37.606+0800 WARN SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-11-19T14:13:43.478+0800 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T14:13:43.479+0800 INFO Initializing Servlet 'dispatcherServlet'
+2025-11-19T14:13:43.482+0800 INFO Completed initialization in 3 ms
+2025-11-19T14:13:51.439+0800 INFO Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025-11-19T14:13:51.439+0800 INFO Initializing Servlet 'dispatcherServletRegistration'
+2025-11-19T14:13:51.440+0800 INFO Completed initialization in 1 ms
