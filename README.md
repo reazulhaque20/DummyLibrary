@@ -1,7 +1,5 @@
 # Dummy Library
 
-## To run this app
-
 Key Highlights:
 The Hexagon (Core)
 
@@ -27,6 +25,8 @@ Benefits You Get:
 * Maintainability - Business logic in one place
 
 * Technology Independence - Domain doesn't know about Spring, H2, or REST
+
+## To run this app
 
 ```shell
 mvn spring-boot:run
@@ -137,3 +137,9 @@ com.ctos.dummy.library/
 [Spring Data JPA Implementation]              ← OUTPUT ADAPTER (auto-generated)
 ```
 
+## Improvement
+
+1. Better exception handling
+2. Security
+3. Cloud Gateway
+4. Config Server
