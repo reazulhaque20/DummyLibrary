@@ -9,6 +9,8 @@ import com.ctos.dummy.library.domain.port.output.AisleRepository;
 import com.ctos.dummy.library.domain.port.output.BookRepository;
 import com.ctos.dummy.library.domain.port.output.LibraryRepository;
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,6 +23,7 @@ import java.util.stream.Collectors;
 @Transactional
 public class LibraryServiceImpl implements LibraryService {
 
+    private static final Logger log = LogManager.getLogger(LibraryService.class);
     private final LibraryRepository libraryRepository;
     private final AisleRepository aisleRepository;
     private final BookRepository bookRepository;
@@ -29,7 +32,10 @@ public class LibraryServiceImpl implements LibraryService {
     @Transactional(readOnly = true)
     public List<AisleDTO> getAllAislesByLibrary(Integer libraryId) {
         Library library = libraryRepository.findById(libraryId)
-                .orElseThrow(() -> new RuntimeException("Library not found with id: " + libraryId));
+                .orElseThrow(() -> {
+                    log.error("Library Not Found With Id: {}", libraryId);
+                    return new RuntimeException("Library not found with id: " + libraryId);
+                });
 
         return aisleRepository.findByLibrary(library).stream()
                 .map(this::mapAisleToDTO)
@@ -38,29 +44,35 @@ public class LibraryServiceImpl implements LibraryService {
 
     @Override
     public LibraryDTO saveLibrary(LibraryCreateDTO dto) {
-        Library library = Library.builder()
-                .libraryName(dto.getLibraryName())
-                .aisles(new HashSet<>())
-                .build();
+        try {
+            Library library = Library.builder()
+                    .libraryName(dto.getLibraryName())
+                    .aisles(new HashSet<>())
+                    .build();
 
-        if (dto.getAisles() != null && !dto.getAisles().isEmpty()) {
-            dto.getAisles().forEach(aisleDto -> {
-                Aisle aisle = Aisle.builder()
-                        .aisleName(aisleDto.getAisleName())
-                        .books(new HashSet<>())
-                        .build();
+            if (dto.getAisles() != null && !dto.getAisles().isEmpty()) {
+                dto.getAisles().forEach(aisleDto -> {
+                    Aisle aisle = Aisle.builder()
+                            .aisleName(aisleDto.getAisleName())
+                            .books(new HashSet<>())
+                            .build();
 
-                if (aisleDto.getBookIds() != null && !aisleDto.getBookIds().isEmpty()) {
-                    List<Book> books = bookRepository.findAllById(aisleDto.getBookIds());
-                    books.forEach(aisle::addBook);
-                }
+                    if (aisleDto.getBookIds() != null && !aisleDto.getBookIds().isEmpty()) {
+                        List<Book> books = bookRepository.findAllById(aisleDto.getBookIds());
+                        books.forEach(aisle::addBook);
+                    }
 
-                library.addAisle(aisle);
-            });
+                    library.addAisle(aisle);
+                });
+            }
+
+            Library savedLibrary = libraryRepository.save(library);
+            return mapLibraryToDTO(savedLibrary);
+        }catch (Exception exception){
+            log.error("Failed to save library.");
+            log.error(exception.getMessage());
+            return null;
         }
-
-        Library savedLibrary = libraryRepository.save(library);
-        return mapLibraryToDTO(savedLibrary);
     }
 
     @Override

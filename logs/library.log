@@ -1660,3 +1660,79 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2025-11-19T14:13:51.439+0800 INFO Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
 2025-11-19T14:13:51.439+0800 INFO Initializing Servlet 'dispatcherServletRegistration'
 2025-11-19T14:13:51.440+0800 INFO Completed initialization in 1 ms
+2025-11-19T15:37:32.078+0800 INFO Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T15:37:32.125+0800 INFO Graceful shutdown complete
+2025-11-19T15:37:32.125+0800 INFO Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T15:37:32.127+0800 INFO Graceful shutdown complete
+2025-11-19T15:37:32.143+0800 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T15:37:32.150+0800 INFO HikariPool-1 - Shutdown initiated...
+2025-11-19T15:37:32.151+0800 INFO HikariPool-1 - Shutdown completed.
+2025-11-19T15:37:33.432+0800 INFO HV000001: Hibernate Validator 8.0.3.Final
+2025-11-19T15:37:33.458+0800 INFO Starting LibraryApplication using Java 21.0.5 with PID 30562 (/Users/reazulhaque/Documents/GitHub/DummyLibrary/target/classes started by reazulhaque in /Users/reazulhaque/Documents/GitHub/DummyLibrary)
+2025-11-19T15:37:33.460+0800 INFO No active profile set, falling back to 1 default profile: "default"
+2025-11-19T15:37:34.025+0800 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T15:37:34.054+0800 INFO Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-11-19T15:37:34.292+0800 INFO Tomcat initialized with port 8181 (http)
+2025-11-19T15:37:34.300+0800 INFO Initializing ProtocolHandler ["http-nio-8181"]
+2025-11-19T15:37:34.301+0800 INFO Starting service [Tomcat]
+2025-11-19T15:37:34.301+0800 INFO Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T15:37:34.328+0800 INFO Initializing Spring embedded WebApplicationContext
+2025-11-19T15:37:34.328+0800 INFO Root WebApplicationContext: initialization completed in 849 ms
+2025-11-19T15:37:34.448+0800 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T15:37:34.477+0800 INFO HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-19T15:37:34.498+0800 INFO HHH000026: Second-level cache disabled
+2025-11-19T15:37:34.675+0800 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T15:37:34.690+0800 INFO HikariPool-1 - Starting...
+2025-11-19T15:37:34.802+0800 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/dummyLibrary user=SA
+2025-11-19T15:37:34.803+0800 INFO HikariPool-1 - Start completed.
+2025-11-19T15:37:34.839+0800 INFO HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T15:37:35.309+0800 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T15:37:35.506+0800 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T15:37:35.722+0800 INFO Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-19T15:37:35.942+0800 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T15:37:36.260+0800 INFO H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/dummyLibrary'
+2025-11-19T15:37:36.294+0800 INFO Starting ProtocolHandler ["http-nio-8181"]
+2025-11-19T15:37:36.312+0800 INFO Tomcat started on port 8181 (http) with context path '/'
+2025-11-19T15:37:36.345+0800 INFO Tomcat initialized with port 8182 (http)
+2025-11-19T15:37:36.345+0800 INFO Initializing ProtocolHandler ["http-nio-127.0.0.1-8182"]
+2025-11-19T15:37:36.346+0800 INFO Starting service [Tomcat]
+2025-11-19T15:37:36.346+0800 INFO Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T15:37:36.352+0800 INFO Initializing Spring embedded WebApplicationContext
+2025-11-19T15:37:36.353+0800 INFO Root WebApplicationContext: initialization completed in 39 ms
+2025-11-19T15:37:36.360+0800 INFO Exposing 13 endpoints beneath base path '/actuator'
+2025-11-19T15:37:36.386+0800 INFO Starting ProtocolHandler ["http-nio-127.0.0.1-8182"]
+2025-11-19T15:37:36.387+0800 INFO Tomcat started on port 8182 (http) with context path '/'
+2025-11-19T15:37:36.398+0800 INFO Started LibraryApplication in 3.128 seconds (process running for 3.768)
+2025-11-19T15:37:36.531+0800 WARN SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-11-19T15:37:36.531+0800 WARN SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-11-19T15:37:44.808+0800 INFO Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025-11-19T15:37:44.811+0800 INFO Initializing Servlet 'dispatcherServletRegistration'
+2025-11-19T15:37:44.813+0800 INFO Completed initialization in 2 ms
+2025-11-19T16:02:17.059+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m11s844ms).
+2025-11-19T16:26:17.070+0800 WARN HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s804ms), soft-evicting connections from pool.
+2025-11-19T16:58:56.061+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m8s802ms).
+2025-11-19T17:24:30.180+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m4s100ms).
+2025-11-19T17:27:07.797+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m37s591ms).
+2025-11-19T17:31:22.879+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m45s56ms).
+2025-11-19T17:32:57.036+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s156ms).
+2025-11-19T17:36:24.884+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m57s837ms).
+2025-11-19T18:09:06.314+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m11s412ms).
+2025-11-19T18:17:21.057+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m14s743ms).
+2025-11-19T18:20:37.464+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m16s407ms).
+2025-11-19T18:23:39.293+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s809ms).
+2025-11-19T18:26:24.296+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m45s4ms).
+2025-11-19T18:29:36.768+0800 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m42s460ms).
+2025-11-19T18:29:51.104+0800 INFO Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T18:29:51.130+0800 INFO Graceful shutdown complete
+2025-11-19T18:29:51.131+0800 INFO Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T18:29:51.133+0800 INFO Graceful shutdown complete
+2025-11-19T18:29:51.152+0800 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T18:29:51.160+0800 INFO HikariPool-1 - Shutdown initiated...
+2025-11-19T18:29:51.161+0800 INFO HikariPool-1 - Shutdown completed.

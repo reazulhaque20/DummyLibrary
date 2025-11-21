@@ -5,6 +5,8 @@ import com.ctos.dummy.library.domain.port.input.LibraryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +19,7 @@ import java.util.List;
 @Tag(name = "Library Management", description = "APIs for managing libraries, aisles, and books")
 public class LibraryController {
 
+    private static final Logger log = LogManager.getLogger(LibraryController.class);
     private final LibraryService libraryService;
 
     /**
@@ -29,9 +32,11 @@ public class LibraryController {
             @RequestParam String libraryName,
             @RequestParam String aisleName) {
 
+        log.info("Param Received: {}, {}", libraryName, aisleName);
         List<BookDTO> books = libraryService.getAllBooksByAisleNameAndLibraryName(
                 aisleName, libraryName);
 
+        log.info("Books List: {}", books);
         return ResponseEntity.ok(books);
     }
 
